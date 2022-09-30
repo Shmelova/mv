@@ -73,7 +73,7 @@ if ( have_posts() ) :
 		}
 
 		if ( ! empty( $data['show_title'] ) ) {
-			printf( '<h2 class="entry-title"><a href="%s">%s</a></h2>',
+			printf( '<h1 class="entry-title"><a href="%s">%s</a></h1>',
 				esc_url( get_permalink() ),
 				get_the_title()
 			);

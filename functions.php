@@ -19,7 +19,10 @@ define( 'CHILD_THEME_DEVELOPER', 'Feast Design Co.' );
 define( 'FEAST_THEME_DIR', trailingslashit( get_stylesheet_directory() ) );
 define( 'FEAST_THEME_URI', trailingslashit( get_stylesheet_directory_uri() ) );
 
-add_theme_support( 'genesis-responsive-viewport' );
+add_action( 'genesis_meta', 'sp_viewport_meta_tag' );
+    function sp_viewport_meta_tag() {
+    echo '<meta name="viewport" content="width=1170px"/>';
+}
 
 add_theme_support( 'html5' );
 
@@ -243,7 +246,7 @@ add_filter( 'genesis_search_text', 'foodie_pro_search_text' );
  * @return string Modified Shay Bocks credits.
  */
 function foodie_pro_search_text() {
-	return esc_html__( 'Search', 'foodiepro' );
+	return esc_html__( 'Введите слово', 'foodiepro' );
 }
 
 add_filter( 'excerpt_more', 'foodie_pro_read_more_link' );
@@ -258,7 +261,7 @@ add_filter( 'the_content_more_link', 'foodie_pro_read_more_link' );
 function foodie_pro_read_more_link() {
 	return sprintf( '...</p><p><a class="more-link" href="%s">%s</a></p>',
 		get_permalink(),
-		esc_html__( 'Read More', 'foodiepro' )
+		esc_html__( 'Читать дальше', 'foodiepro' )
 	);
 }
 
@@ -274,9 +277,15 @@ function foodie_pro_comment_form_args( $args ) {
 	$args['title_reply'] = esc_html__( 'Comments', 'foodiepro' );
 	return $args;
 }
+function wpbeginner_remove_comment_url($arg) {
+    $arg['url'] = '';
+    return $arg;
+}
+add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
 
 // Add post navigation.
-add_action( 'genesis_after_entry_content', 'genesis_prev_next_post_nav', 5 );
+remove_action( 'genesis_after_entry_content', 'genesis_prev_next_post_nav', 5 );
+
 
 // Modify the author says text in comments.
 add_filter( 'comment_author_says_text', '__return_empty_string' );
@@ -329,4 +338,12 @@ function feast_footer_creds_text( $creds ) {
 		CHILD_THEME_NAME,
 		'' // additional custom footer text here
 	);
+}
+
+
+add_filter( 'genesis_gravatar_sizes', 'foodie_genesis_gravatar_sizes');
+
+function foodie_genesis_gravatar_sizes( $sizes ) {
+	$sizes[__( 'Double Extra Large', 'genesis' )] = 200;
+	return $sizes;
 }

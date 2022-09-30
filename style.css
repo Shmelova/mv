@@ -519,7 +519,7 @@ h6 {
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 1.7em;
 }
 
 h1 a {
@@ -737,13 +737,13 @@ Structure and Layout
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 1170px;
+	width: 1170px;
 }
 
 .site-inner {
 	background: #fff;
 	margin: 0 auto;
-	padding: 15px 37px;
+	padding: 15px 0px;
 }
 
 
@@ -1837,7 +1837,7 @@ div.pagination-next {
 
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
-.comment-respond input[type="url"] {
+ {
 	width: 50%;
 }
 
@@ -2057,144 +2057,6 @@ Site Footer
 /*
 Media Queries
 ----------------------------------------------------------------------------- */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (-moz-min-device-pixel-ratio: 1.5),
-	only screen and (-o-min-device-pixel-ratio: 3/2),
-	only screen and (min-device-pixel-ratio: 1.5) {
-	.header-image .site-header {
-		-webkit-background-size: contain !important;
-		background-size: contain !important;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	#before-header {
-		visibility: visible;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	.site-inner,
-	.wrap {
-		max-width: 1040px;
-		overflow: hidden;
-	}
-
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-sidebar-content .content-sidebar-wrap,
-	.alt-sidebar-content .content-sidebar-wrap,
-	.alt-sidebar-content .content {
-		width: 720px;
-	}
-
-	.content,
-	.site-header .widget-area {
-		width: 620px;
-	}
-
-	.sidebar-content-sidebar .content,
-	.sidebar-sidebar-content .content,
-	.content-sidebar-sidebar .content {
-		width: 400px;
-	}
-
-	.genesis-nav-menu a,
-	.genesis-nav-menu > .first > a,
-	.genesis-nav-menu > .last > a {
-		padding: 17px;
-	}
-
-	.sidebar-primary {
-		width: 300px;
-	}
-}
-
-@media only screen and (max-width: 1023px) {
-	.content,
-	.content-sidebar-sidebar .content,
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
-	.alt-sidebar-content .content-sidebar-wrap,
-	.alt-sidebar-content .content,
-	.sidebar-content-sidebar .content,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-primary,
-	.sidebar-secondary,
-	.sidebar-sidebar-content .content,
-	.sidebar-sidebar-content .content-sidebar-wrap,
-	.site-header .widget-area,
-	.site-inner,
-	.title-area,
-	.wrap {
-		width: 100%;
-	}
-
-	.header-image .site-header .wrap {
-		background-position: center top;
-	}
-
-	.header-image .site-header .widget-area {
-		padding: 0;
-	}
-
-	.site-inner {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-
-	.archive-description,
-	.author-box,
-	.entry,
-	.entry-comments,
-	.entry-footer .entry-meta,
-	.sidebar .widget,
-	.site-header,
-	.comment-respond {
-		padding: 10px 0;
-	}
-
-	.genesis-nav-menu li,
-	.site-header ul.genesis-nav-menu,
-	.site-header .search-form {
-		float: none;
-	}
-
-	.genesis-nav-menu,
-	.site-description,
-	.site-header .title-area,
-	.site-header .search-form,
-	.site-title {
-		text-align: center;
-	}
-
-	.site-header .search-form {
-		margin: 17px auto;
-	}
-
-	.genesis-nav-menu li.right {
-		display: none;
-	}
-
-	.entry-footer .entry-meta {
-		margin: 0;
-		padding-top: 12px;
-	}
-
-	.sidebar .widget.enews-widget {
-		padding: 20px;
-	}
-
-	.footer-widgets {
-		padding: 20px 5% 16px;
-	}
-
-	.footer-widgets-1 {
-		margin: 0;
-	}
 
 	.before-header .enews-widget p {
 		display: none;
@@ -2499,11 +2361,11 @@ Media Queries
 ----------------------------------------------------------------------------- */
 
 .single .post h1 {
-	font-size:2em;
+	font-size:1.7em;
 }
 
 .single .post h2 {
-	font-size:1.625em;
+	font-size:1.2em;
 }
 
 .single .post h3 {
@@ -2527,3 +2389,36 @@ Media Queries
 CSS Customizations should be put into Appearances > Customize > Additional CSS
 But if you have to put them here, put them below this line so they're easy to copy in an update
 ---------------------------------------------------------------------------------------------------- */
+
+.crp_related {
+	text-align: center;
+}
+.crp_related ul {
+	display: inline-block;
+    text-align: center;
+	height: 310px;
+}
+.crp_related ul li {
+    *display: inline; /*IE7*/
+    *zoom:1; /*IE7*/
+}
+.wprm-recipe-template-madame-vorger-recipe .wprm-recipe-image {
+	left: 52% !important;
+}
+/*
+.user-profile {
+	background-color:#f5f0e3;
+	padding:0 0 0 10px;
+}
+.user-profile .widget-wrap a{
+	
+}
+.user-profile .widget-title{
+	padding-top:25px;
+}*/
+.search-form-input {
+	font-size: 1em;
+}
+.wpml-ls-statics-footer {
+	display: none;
+}
