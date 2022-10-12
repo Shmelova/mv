@@ -1,43 +1,28 @@
-[wprm-recipe-image size="200x200" border_width="7px" border_style="solid" border_color="#ffffff" rounded_radius="30px" style="normal"]
-<div class="wprm-recipe-template-madame-vorger-recipe-container">
-	<div class="wprm-recipe-template-madame-vorger-recipe-header">
-		[wprm-recipe-name text_style="bold" tag="h1"]
-[wprm-recipe-rating icon_color="#044239"]
-		[wprm-spacer size="9px"]
-
-		
+[wprm-recipe-image size="200x200" style="rounded" border_color="#ffffff" border_width="10px" rounded_radius="30px"]
+<div class="wprm-recipe-template-madame-vorger-container">
+	<div class="wprm-recipe-template-madame-vorger-header">
+		[wprm-recipe-name tag="h2" text_style="bold"]
+		[wprm-spacer size="5px"]
+		[wprm-recipe-summary]
 		[wprm-spacer size="15px"]
-		
+		[wprm-recipe-rating display="stars-details" icon_color="#ffffff"]
 		[wprm-spacer size="15px"]
-
-		[wprm-recipe-print style="inline-button" button_color="#ffffff" text_style="light" text_color="#044239" border_color="#044239" icon="printer" text="" icon_color="#044239" border_radius="100px" horizontal_padding="12px"]
-		[wprm-recipe-pin style="inline-button" text_color="#2c3e50" button_color="#ffffff" horizontal_padding="12px" icon="pinterest" text="" border_radius="100px" icon_color="#044239" border_color="#044239"]
-
-
-		
+		[wprm-recipe-print text="Print" style="inline-button" text_color="#2c3e50" button_color="#ffffff" horizontal_padding="12px" border_color="#ffffff" icon="printer"]
+		[wprm-recipe-pin text="Pin" style="inline-button" text_color="#2c3e50" button_color="#ffffff" horizontal_padding="12px" border_color="#ffffff" icon="pinterest"]
+		[wprm-recipe-jump-to-comments text="Rate" style="inline-button" text_color="#2c3e50" button_color="#ffffff" horizontal_padding="12px" border_color="#ffffff" icon="star-empty"]
 		[wprm-recipe-add-to-collection style="inline-button" text_color="#2c3e50" button_color="#ffffff" horizontal_padding="12px" border_color="#ffffff" icon="contact" icon_added="contact"]
-		[wprm-spacer size="18px"]
-		[wprm-recipe-meta-container fields="tags" label_separator=": " style="inline" icon="" icon_color="#044239" icon_course="" icon_cuisine="" icon_keyword="" label_style="light" text_style="light" label_course="Категория" label_cuisine="Кухня" label_keyword="Таг"]
-		[wprm-recipe-meta-container fields="times" style="inline" label_separator=": " icon_color="#ffffff" text_style="light" time_shorthand="1" label_cook_time="Активное время приготовления" label_total_time="Общее время приготовления" icon_prep_time="" icon_cook_time="" icon_custom_time="" icon_total_time="" label_style="light"]
-[wprm-spacer]
-		
+		[wprm-spacer]
+		[wprm-recipe-meta-container fields="tags" label_style="faded" style="inline" label_separator=": "]
+		[wprm-recipe-meta-container fields="times" label_style="faded" style="inline" label_separator=": "]
+		[wprm-recipe-servings label_container="1" label="Servings" label_style="faded" style="inline" label_separator=": "]
 		[wprm-recipe-nutrition label_container="1" field="calories" unit="1" label="Calories" label_style="faded" style="inline" label_separator=": "]
-		
-
-
+		[wprm-recipe-author label_container="1" label="Author" label_style="faded" style="inline" label_separator=": "]
 		[wprm-recipe-cost label_container="1" label="Cost" label_style="faded" style="inline" label_separator=": "]
 	</div>
 	[wprm-recipe-equipment header="Equipment" header_style="bold"]
-[wprm-spacer]
-
-
-[wprm-recipe-summary text_style="light"]
-[wprm-spacer size="15px"]
-[wprm-recipe-servings label_container="1" style="inline" icon_color="#4a4a4a" label="Количество порций" icon="" label_separator=" :" adjustable="text" label_style="uppercase" text_style="normal"]
-	[wprm-recipe-ingredients notes_style="faded" header_style="uppercase" group_style="normal" text_style="light" list_style="checkbox" header="Ингредиенты:" group_tag="h5"]
-	[wprm-recipe-instructions image_size="medium" header_tag="h3" header_style="uppercase" group_tag="h5" text_margin="2px" group_style="light" text_style="light" header="Рецепт:"]
+	[wprm-recipe-ingredients header="Ingredients" notes_style="faded" group_style="bold" header_style="bold"]
+	[wprm-recipe-instructions header="Instructions" group_style="bold" header_style="bold" text_margin="5px" image_size="medium"]
 	[wprm-recipe-video header="Video" header_style="bold"]
-	[wprm-recipe-notes header_style="uppercase" header_tag="h3" text_style="light" header="заметки"]
-[wprm-spacer]
+	[wprm-recipe-notes header="Notes" header_style="bold"]
 	[wprm-nutrition-label style="simple" header="Nutrition" header_style="bold"]
 </div>
