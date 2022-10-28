@@ -1,0 +1,103 @@
+.wprm-recipe-template-madame-vorger {
+    margin: 20px auto;
+    background-color: %wprm_background%;
+    font-family: %wprm_main_font_family%;
+    font-size: %wprm_main_font_size%;
+    line-height: %wprm_main_line_height%;
+    color: %wprm_main_text%;
+    max-width: %wprm_max_width%;
+}
+.wprm-recipe-template-madame-vorger a {
+    color: %wprm_link%;
+}
+.wprm-recipe-template-madame-vorger p, .wprm-recipe-template-madame-vorger li {
+    font-family: %wprm_main_font_family%;
+    font-size: 1em !important;
+    line-height: %wprm_main_line_height%;
+}
+.wprm-recipe-template-madame-vorger li {
+    margin: 0 0 0 32px !important;
+    padding: 0 !important;
+}
+.rtl .wprm-recipe-template-madame-vorger li {
+    margin: 0 32px 0 0 !important;
+}
+.wprm-recipe-template-madame-vorger ol, .wprm-recipe-template-madame-vorger ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wprm-recipe-template-madame-vorger br {
+    display: none;
+}
+.wprm-recipe-template-madame-vorger .wprm-recipe-name,
+.wprm-recipe-template-madame-vorger .wprm-recipe-header {
+    font-family: %wprm_header_font_family%;
+    color: %wprm_header_text%;
+    line-height: %wprm_header_line_height%;
+}
+.wprm-recipe-template-madame-vorger h1,
+.wprm-recipe-template-madame-vorger h2,
+.wprm-recipe-template-madame-vorger h3,
+.wprm-recipe-template-madame-vorger h4,
+.wprm-recipe-template-madame-vorger h5,
+.wprm-recipe-template-madame-vorger h6 {
+    font-family: %wprm_header_font_family%;
+    color: %wprm_header_text%;
+    line-height: %wprm_header_line_height%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wprm-recipe-template-madame-vorger .wprm-recipe-header {
+    margin-top: 1.2em !important;
+}
+.wprm-recipe-template-madame-vorger h1 {
+    font-size: %wprm_h1_size%;
+}
+.wprm-recipe-template-madame-vorger h2 {
+    font-size: %wprm_h2_size%;
+}
+.wprm-recipe-template-madame-vorger h3 {
+    font-size: %wprm_h3_size%;
+}
+.wprm-recipe-template-madame-vorger h4 {
+    font-size: %wprm_h4_size%;
+}
+.wprm-recipe-template-madame-vorger h5 {
+    font-size: %wprm_h5_size%;
+}
+.wprm-recipe-template-madame-vorger h6 {
+    font-size: %wprm_h6_size%;
+}.wprm-recipe-template-madame-vorger {
+	position: relative;
+	border-style: %wprm_border_style%;
+	border-width: %wprm_border_width%;
+	border-color: %wprm_border%;
+	border-radius: %wprm_border_radius%;
+	margin: 120px auto 20px auto;
+	overflow: visible;
+}
+.wprm-recipe-template-madame-vorger-container {
+	overflow: hidden;
+	padding: 0 10px 10px 10px;
+	border: 0;
+	border-radius: %wprm_inner_border_radius%;
+}
+.wprm-recipe-template-madame-vorger .wprm-recipe-image {
+	position: absolute;
+	margin-top: -100px;
+	margin-left: -100px;
+	left: 50%;
+}
+.wprm-recipe-template-madame-vorger-header {
+	margin: 0 -10px 10px -10px;
+	padding: 110px 10px 10px 10px;
+	text-align: center;
+	background-color: %wprm_top_header_background%;
+	color: %wprm_top_header_text%;
+}
+.wprm-recipe-template-madame-vorger-header a {
+	color: %wprm_top_header_link%;
+}
+.wprm-recipe-template-madame-vorger-header .wprm-recipe-name {
+	color: %wprm_top_header_text%;
+}
